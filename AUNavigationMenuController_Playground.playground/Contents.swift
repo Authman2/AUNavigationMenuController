@@ -9,12 +9,13 @@ import PlaygroundSupport
 
 
 
-class vc: UIViewController {
+class TableViewCont: UITableViewController {
     
     
     override func viewDidLoad() {
         navigationItem.title = "Testing AUNavigationMenuController";
     }
+    
 }
 
 
@@ -23,7 +24,8 @@ class vc: UIViewController {
 
 
 // Basically just shows what I'm working on.
-let viewController = vc();
-let navController = AUNavigationMenuController(rootViewController: viewController);
+let tv = TableViewCont();
+let navController = AUNavigationMenuController(rootViewController: tv);
+//navController.shouldCoverViewContents = true;
 
 PlaygroundPage.current.liveView = navController.view;

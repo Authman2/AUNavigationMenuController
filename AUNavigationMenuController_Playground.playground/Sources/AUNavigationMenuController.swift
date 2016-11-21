@@ -44,14 +44,16 @@ public class AUNavigationMenuController: UINavigationController {
     /////////////////////////
     
     // Whether or not the menu is open.
-    private var open: Bool = Bool();
+    public var open: Bool = Bool();
     
     
     // The amount to pull the menu down by.
     private let pullAmount: CGFloat = 100;
     
     
-    
+    // Whether or not the navigation menu should cover whatever is in the view
+    // or if it should move the view along with it.
+    public var shouldCoverViewContents = Bool();
     
     
     
@@ -80,14 +82,19 @@ public class AUNavigationMenuController: UINavigationController {
     
     /* Opens a pull down style menu. */
     @objc private func openPulldownMenu() {
-        // Open/Close the menu
+        // Creates a menu view and adds it behind everything.
+        //addMenuView();
         
         
         // Open
         if(!open) {
             UIView.animate(withDuration: 0.35, delay: 0.2, options: [], animations: {
                 
-                self.navigationBar.frame = CGRect(x: 0, y: 0, width: self.navigationBar.frame.width, height: self.navigationBar.frame.height + self.pullAmount);
+                if(self.shouldCoverViewContents) {
+                    self.navigationBar.frame.origin.y += self.pullAmount;
+                } else {
+                    self.view.frame.origin.y += self.pullAmount;
+                }
                 
             }, completion: nil);
             open = true;
@@ -97,7 +104,11 @@ public class AUNavigationMenuController: UINavigationController {
             
             UIView.animate(withDuration: 0.35, delay: 0.2, options: [], animations: {
                 
-                self.navigationBar.frame = CGRect(x: 0, y: 0, width: self.navigationBar.frame.width, height: self.navigationBar.frame.height - self.pullAmount);
+                if(self.shouldCoverViewContents) {
+                    self.navigationBar.frame.origin.y -= self.pullAmount;
+                } else {
+                    self.view.frame.origin.y -= self.pullAmount;
+                }
                 
             }, completion: nil);
             open = false;
