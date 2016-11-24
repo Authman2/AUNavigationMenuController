@@ -3,12 +3,20 @@ import UIKit
 
 
 
-public class AUNavigationMenuController: UINavigationController {
+public class AUNavigationMenuController: UINavigationController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    
+    // The collection view with all of the menu pages.
+    var collectionView: UICollectionView!;
+    
+    
+    
     
     /* Initializers and Basic Setup */
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
+        setupCollectionView();
         setupTapGesture();
         // Creates a menu view and adds it behind everything.
         addMenuView();
@@ -16,6 +24,7 @@ public class AUNavigationMenuController: UINavigationController {
     
     public override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController);
+        setupCollectionView();
         setupTapGesture();
         // Creates a menu view and adds it behind everything.
         addMenuView();
@@ -27,12 +36,14 @@ public class AUNavigationMenuController: UINavigationController {
     
     public override func viewDidLoad() {
         super.viewDidLoad();
+        setupCollectionView();
         setupTapGesture();
         // Creates a menu view and adds it behind everything.
         addMenuView();
     }
     
     public override func didMove(toParentViewController parent: UIViewController?) {
+        setupCollectionView();
         setupTapGesture();
         // Creates a menu view and adds it behind everything.
         addMenuView();
@@ -48,9 +59,6 @@ public class AUNavigationMenuController: UINavigationController {
     //  Variables
     //
     /////////////////////////
-    
-    // The actual menu
-    private let menuView: UIView = UIView();
     
     
     // Whether or not the menu is open.
@@ -89,6 +97,19 @@ public class AUNavigationMenuController: UINavigationController {
     }
     
     
+    /* Setup what's needed for the collection view. */
+    private func setupCollectionView() {
+        let layout = UICollectionViewFlowLayout();
+        layout.scrollDirection = .horizontal;
+        
+        collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: pullAmount), collectionViewLayout: layout);
+        collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell");
+        collectionView.alwaysBounceHorizontal = true;
+        collectionView.showsHorizontalScrollIndicator = false;
+        collectionView.showsVerticalScrollIndicator = false;
+    }
+    
+    
     
     /* Opens a pull down style menu. */
     @objc private func openPulldownMenu() {
@@ -96,56 +117,38 @@ public class AUNavigationMenuController: UINavigationController {
         // Open
         if(!open) {
             
-            // Set the height to 0 to prevent premature overlapping.
-            if(shouldCoverViewContents) {
-                self.menuView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 0);
-            }
+            self.collectionView.frame.origin = CGPoint(x: 0, y: -self.pullAmount);
+            self.view.bringSubview(toFront: self.collectionView);
             
             UIView.animate(withDuration: 0.35, delay: 0.2, options: [], animations: {
                 
-                if(self.shouldCoverViewContents) {
-                    self.navigationBar.frame.origin.y += self.pullAmount;
-                    self.view.bringSubview(toFront: self.menuView);
-                    self.changeMenuSize(grow: true);
-                } else {
-                    self.view.frame.origin.y += self.pullAmount;
-                    self.menuView.frame.origin.y -= self.pullAmount;
-                }
+                self.navigationBar.frame.origin.y += self.pullAmount;
+                self.collectionView.frame.origin.y += self.pullAmount;
                 
-            }, completion: nil);
-            open = true;
+            }, completion: { (bool: Bool) in
+                
+                self.open = true;
+                
+            });
         
         // Close
         } else {
             
             UIView.animate(withDuration: 0.35, delay: 0.2, options: [], animations: {
                 
-                if(self.shouldCoverViewContents) {
-                    self.navigationBar.frame.origin.y -= self.pullAmount;                    self.changeMenuSize(grow: false);
-                } else {
-                    self.view.frame.origin.y -= self.pullAmount;
-                    self.menuView.frame.origin.y += self.pullAmount;
-                }
+                self.navigationBar.frame.origin.y -= self.pullAmount;
+                self.collectionView.frame.origin = CGPoint(x: 0, y: -self.pullAmount);
                 
-            }, completion: nil);
-            open = false;
-            
+            }, completion: { (bool: Bool) in
+                
+                self.view.sendSubview(toBack: self.collectionView);
+                self.open = false;
+                
+            });
             
         } // End of if-statement.
         
     }
-    
-    
-    /* Adjusts the size of the menu over a period of time. */
-    private func changeMenuSize(grow: Bool) {
-        if(grow) {
-            self.menuView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: pullAmount);
-        } else {
-            self.menuView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 0);
-        }
-    }
-    
-
     
     
     
@@ -153,15 +156,53 @@ public class AUNavigationMenuController: UINavigationController {
     ////////// Adding Navigation Pages //////////
     
     private func addMenuView() {
-        // Initialize the menu view
-        menuView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: pullAmount);
-        menuView.backgroundColor = UIColor.green;
+        // Initialize the collection view
+        collectionView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: pullAmount);
         
         
         // Add the menu view to the container
-        view.addSubview(menuView);
-        view.sendSubview(toBack: menuView);
+        view.addSubview(collectionView);
+        view.sendSubview(toBack: collectionView);
+        collectionView.backgroundColor = UIColor.green;
+        
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
     }
     
+    
+    
+    
+    
+    
+    
+    /////////// Collection View Stuff ////////////
+    
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1;
+    }
+    
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10;
+    }
+    
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath);
+        
+        cell.backgroundColor = UIColor.red;
+        
+        return cell;
+    }
+    
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: pullAmount - 10);
+    }
+    
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10;
+    }
     
 }
