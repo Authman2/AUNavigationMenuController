@@ -163,7 +163,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         // Add the menu view to the container
         view.addSubview(collectionView);
         view.sendSubview(toBack: collectionView);
-        collectionView.backgroundColor = UIColor.green;
+        collectionView.backgroundColor = UIColor(red: 248/255.0, green: 248/255.0, blue: 248/255.0, alpha: 1.0);
         
         collectionView.delegate = self;
         collectionView.dataSource = self;
