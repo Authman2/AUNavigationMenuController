@@ -9,10 +9,17 @@
 AUNavigationMenuController is a subclass of UINavigationController. When the navigation bar is clicked, a menu is slide down from the top of the screen so that the user can go to different pages within the app. 
 
 ## How To
-- Create any number of few controllers that will serve as the pages of your app.
-- Create an AUNavigationMenuController object and set its rootViewController to the first page of your application.
-- Use the method "addMenuItem" from AUNavigationMenuController to add the different pages that each menu item will take the user to.
-- Run your app and move through different view controllers by tapping on the navigation bar and selecting an item.
+- Create a window in the AppDelegate file.
+- <img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial1.png" alt="tutorial1" width="500" height="400">
+- Create separate files for each view controller that you want in your application.
+- <img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial2.png" alt="tutorial2" width="300" height="200">
+- Create references to each view controller in the AppDelegate file.
+- <img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial3.png" alt="tutorial3" width="500" height="400">
+- Setup an AUNavigationMenuController object and an initial view controller for the navigation controller to use as the root.
+- <img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial4.png" alt="tutorial4" width="500" height="400">
+- Add menu items for each view controller that you will need in you app, making sure it give it a name, an optional image, and a destination view controller. The destination is the view controller that the menu item will take the user to.
+- <img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial5.png" alt="tutorial5" width="500" height="400">
+- Build and run your application!
 
 ## Requirements
 
