@@ -7,126 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1980BBBDCDFF840877777E0DDC9BB83A /* Pods-AUNavigationMenuController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C94461D3BD87C9A1C3EDAC00435057 /* Pods-AUNavigationMenuController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F508F8017B8124ED3B4FDCADA685718 /* AUNavigationMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57655E9D5D36884D60D2584F2A7C4FB9 /* AUNavigationMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AFD5CC21DE8E97D005F504C /* AUNavigationMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */; };
-		5AFD5CC31DE8E97D005F504C /* AUNavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */; };
-		5AFD5CC41DE8E97D005F504C /* NavigationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */; };
-		5AFD5CCB1DE8E990005F504C /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC51DE8E990005F504C /* Neon.swift */; };
-		5AFD5CCC1DE8E990005F504C /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */; };
-		5AFD5CCD1DE8E990005F504C /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */; };
-		5AFD5CCE1DE8E990005F504C /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */; };
-		5AFD5CCF1DE8E990005F504C /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */; };
-		5AFD5CD01DE8E990005F504C /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */; };
-		780AB9F3934C6544C96F0D4B5ED91E80 /* AUNavigationMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AABF6D7E57722AF35ED8EE443F02F424 /* AUNavigationMenuController-dummy.m */; };
-		A07491C0A3C9C2335747E70096D736F0 /* Pods-AUNavigationMenuController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8641BEC65355453B8C190B195E8498FD /* Pods-AUNavigationMenuController_Tests-dummy.m */; };
-		C465B1C4FF20CB36AC86259DDAAE5931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E2931185FAB50D74130CABD8D6D66AC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		18BDBB5D1BBC904DAEFD3C3351AEAA6A /* AUNavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4D5B5201ECA7D683921BCA4ECB473 /* AUNavigationMenuCell.swift */; };
+		197F7ECA820095DA5765E8CF552F92B1 /* Pods-TestMyCocoapod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7031B5E8D2D4F95C9790950B8E46FC36 /* Pods-TestMyCocoapod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA85027656B38AA36767F4219E4EFF2 /* AUNavigationMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2AE93241ED2B26AFF99797E100E4C /* AUNavigationMenuController.swift */; };
+		27F274F4F1903307E268DA57CA51B120 /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE25582AB500A945F97E4E4693BF25F /* NeonAnchorable.swift */; };
+		38DA95FAECD54338541C33D88F9AA9CA /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1073373A31C560961AECC6E96D3FA4 /* NeonGroupable.swift */; };
+		6DC3BDF3EA8B65AA10622B9C3E90DB92 /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ADD30E28029B73F35B45EA7C3B5413 /* Neon.swift */; };
+		7031172F5E0894C1D03387FF48CC1409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		989F0EE58C5BE98389FDF1F232C080A1 /* AUNavigationMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5D41614CB3856D4B8558C93BA83FC1 /* AUNavigationMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5420923BD3C283ABD311948641E8DA /* AUNavigationMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F7460865F016C929A80D8EDA0F06A /* AUNavigationMenuController-dummy.m */; };
+		9ED853D4995239899E5AFB096D461D80 /* NavigationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706C90F3748E8F5D4F26A7D92C18C01 /* NavigationMenuItem.swift */; };
+		A0934143A5F7AE76AB86F99AA7C1D8FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A62863673EC15B6CCFCAD75513B09AF2 /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D925DF9B33301B535310EEF034FC94 /* NeonAlignable.swift */; };
+		AC1B1B969E4E68290107F644C37D4872 /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA06EF427D9DA6951C2765F5FCFCF99 /* NeonExtensions.swift */; };
+		C4686365C5C848B11A13BACC3D48E41D /* Pods-TestMyCocoapod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D90BB40A5AC933418D597171AB8E4081 /* Pods-TestMyCocoapod-dummy.m */; };
+		F01656CB6AD227C5C4DF1D6138AA9C3F /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D001500F899A37897D908CC387E85 /* NeonFrameable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9DFAEB4B7A9F6AC6C4FC3E0EAA5DBCEE /* PBXContainerItemProxy */ = {
+		30B54406061EF2A5D77A9126AD6D5A1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A9F959E5D71614DD35773D75D93FC01;
+			remoteGlobalIDString = 6DDD38447237C7028B3F560AF5EB2821;
 			remoteInfo = AUNavigationMenuController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E6425C66CB4495B181F9A5BF3356384 /* Pods-AUNavigationMenuController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AUNavigationMenuController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AUNavigationMenuController.xcconfig; sourceTree = "<group>"; };
-		3B51976705781AE7B226732ED1607DED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43D92B5A10C999AB8296A152B13DD993 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AUNavigationMenuController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		50BA275F9E22CC377963C2C884D7B456 /* AUNavigationMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUNavigationMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57655E9D5D36884D60D2584F2A7C4FB9 /* AUNavigationMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AUNavigationMenuController-umbrella.h"; sourceTree = "<group>"; };
-		589BEFFE5C40E7AA4413AFFDABDBC9CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuController.swift; sourceTree = "<group>"; };
-		5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuCell.swift; sourceTree = "<group>"; };
-		5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuItem.swift; sourceTree = "<group>"; };
-		5AFD5CC51DE8E990005F504C /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neon.swift; sourceTree = "<group>"; };
-		5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAlignable.swift; sourceTree = "<group>"; };
-		5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAnchorable.swift; sourceTree = "<group>"; };
-		5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonExtensions.swift; sourceTree = "<group>"; };
-		5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonFrameable.swift; sourceTree = "<group>"; };
-		5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonGroupable.swift; sourceTree = "<group>"; };
-		5C98D133B0B607D3829AD24CE350EF28 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AUNavigationMenuController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DD7203CE1245F614E07983854D654D3 /* Pods-AUNavigationMenuController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AUNavigationMenuController_Tests-resources.sh"; sourceTree = "<group>"; };
-		63A527FB3309DF9F8527763FF38557FF /* Pods_AUNavigationMenuController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUNavigationMenuController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8576F01659408FC73C07F9B84E73B77A /* Pods-AUNavigationMenuController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AUNavigationMenuController_Tests.modulemap"; sourceTree = "<group>"; };
-		8641BEC65355453B8C190B195E8498FD /* Pods-AUNavigationMenuController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AUNavigationMenuController_Tests-dummy.m"; sourceTree = "<group>"; };
-		8FD9557F119BEF8CC12C73FE6D773E30 /* AUNavigationMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AUNavigationMenuController.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2C94461D3BD87C9A1C3EDAC00435057 /* Pods-AUNavigationMenuController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AUNavigationMenuController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A9D0424C0019CA168897B0F31DE85666 /* Pods-AUNavigationMenuController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AUNavigationMenuController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AABF6D7E57722AF35ED8EE443F02F424 /* AUNavigationMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AUNavigationMenuController-dummy.m"; sourceTree = "<group>"; };
-		BFCB7CA78FDCD9272292F88732135C4F /* AUNavigationMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AUNavigationMenuController-prefix.pch"; sourceTree = "<group>"; };
+		16ADD30E28029B73F35B45EA7C3B5413 /* Neon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = AUNavigationMenuController/Classes/Neon.swift; sourceTree = "<group>"; };
+		1ACA18193C1DEF3C7C02A3B351A52A20 /* Pods-TestMyCocoapod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestMyCocoapod.debug.xcconfig"; sourceTree = "<group>"; };
+		1B244DCF779071E6F9367B2CDDCF15C8 /* Pods-TestMyCocoapod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestMyCocoapod-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E5D41614CB3856D4B8558C93BA83FC1 /* AUNavigationMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AUNavigationMenuController-umbrella.h"; sourceTree = "<group>"; };
+		200BCF733ACAD829360C337800B7F4C1 /* Pods-TestMyCocoapod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TestMyCocoapod.modulemap"; sourceTree = "<group>"; };
+		40D925DF9B33301B535310EEF034FC94 /* NeonAlignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAlignable.swift; path = AUNavigationMenuController/Classes/NeonAlignable.swift; sourceTree = "<group>"; };
+		495BFD794B1E4B34860536899572CFB8 /* AUNavigationMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AUNavigationMenuController.modulemap; sourceTree = "<group>"; };
+		4FCBADB5EFCC4F5621DB0282C54B152D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5D001500F899A37897D908CC387E85 /* NeonFrameable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonFrameable.swift; path = AUNavigationMenuController/Classes/NeonFrameable.swift; sourceTree = "<group>"; };
+		6E1073373A31C560961AECC6E96D3FA4 /* NeonGroupable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonGroupable.swift; path = AUNavigationMenuController/Classes/NeonGroupable.swift; sourceTree = "<group>"; };
+		7031B5E8D2D4F95C9790950B8E46FC36 /* Pods-TestMyCocoapod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestMyCocoapod-umbrella.h"; sourceTree = "<group>"; };
+		830F7460865F016C929A80D8EDA0F06A /* AUNavigationMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AUNavigationMenuController-dummy.m"; sourceTree = "<group>"; };
+		884891A61B313523DEA0DDE5678011B7 /* Pods-TestMyCocoapod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestMyCocoapod-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8E982CE7B6BBA05C9BD691DFEC836550 /* Pods-TestMyCocoapod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestMyCocoapod-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1487E83DE8FF6B40193CEE6A95A7CD0 /* AUNavigationMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AUNavigationMenuController-prefix.pch"; sourceTree = "<group>"; };
+		A706C90F3748E8F5D4F26A7D92C18C01 /* NavigationMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationMenuItem.swift; path = AUNavigationMenuController/Classes/NavigationMenuItem.swift; sourceTree = "<group>"; };
+		B744C14E27460B77FBFCCA5566EF188B /* Pods_TestMyCocoapod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestMyCocoapod.framework; path = "Pods-TestMyCocoapod.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8261E79DBEC56A13CA1776B73AF6D6A /* Pods-TestMyCocoapod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestMyCocoapod-frameworks.sh"; sourceTree = "<group>"; };
+		B8C2AE93241ED2B26AFF99797E100E4C /* AUNavigationMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AUNavigationMenuController.swift; path = AUNavigationMenuController/Classes/AUNavigationMenuController.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D1EDFAE87DE573E153AD47F4A41CAE55 /* Pods-AUNavigationMenuController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AUNavigationMenuController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDB7C8A4ED0EC3BC31EA97BAC2C7CDA0 /* AUNavigationMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AUNavigationMenuController.framework; path = AUNavigationMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA06EF427D9DA6951C2765F5FCFCF99 /* NeonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonExtensions.swift; path = AUNavigationMenuController/Classes/NeonExtensions.swift; sourceTree = "<group>"; };
+		D90BB40A5AC933418D597171AB8E4081 /* Pods-TestMyCocoapod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestMyCocoapod-dummy.m"; sourceTree = "<group>"; };
+		E0481AC19D1947B09892A2EC5836C988 /* AUNavigationMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AUNavigationMenuController.xcconfig; sourceTree = "<group>"; };
+		E1B4D5B5201ECA7D683921BCA4ECB473 /* AUNavigationMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AUNavigationMenuCell.swift; path = AUNavigationMenuController/Classes/AUNavigationMenuCell.swift; sourceTree = "<group>"; };
+		E56B4C0C4EFB1F02ECDF5BD1FC749F09 /* Pods-TestMyCocoapod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestMyCocoapod.release.xcconfig"; sourceTree = "<group>"; };
+		F9AC078144C14E9B9E78B9F711CDAE72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE25582AB500A945F97E4E4693BF25F /* NeonAnchorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAnchorable.swift; path = AUNavigationMenuController/Classes/NeonAnchorable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20CF75EFE4ED0087BA2685186F67A449 /* Frameworks */ = {
+		2C5B58181892B45BF734DDA765D26257 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2931185FAB50D74130CABD8D6D66AC2 /* Foundation.framework in Frameworks */,
+				7031172F5E0894C1D03387FF48CC1409 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89C89A324CC7AB71706DCE3A499DADB4 /* Frameworks */ = {
+		A8DFDD2E143E4D22585D9D7CBBA995FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C465B1C4FF20CB36AC86259DDAAE5931 /* Foundation.framework in Frameworks */,
+				A0934143A5F7AE76AB86F99AA7C1D8FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		309259C6EFB9283B47870009961015CE /* Products */ = {
+		02CF27E222BBB83FF127A14F656CEAED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				50BA275F9E22CC377963C2C884D7B456 /* AUNavigationMenuController.framework */,
-				63A527FB3309DF9F8527763FF38557FF /* Pods_AUNavigationMenuController_Tests.framework */,
+				495BFD794B1E4B34860536899572CFB8 /* AUNavigationMenuController.modulemap */,
+				E0481AC19D1947B09892A2EC5836C988 /* AUNavigationMenuController.xcconfig */,
+				830F7460865F016C929A80D8EDA0F06A /* AUNavigationMenuController-dummy.m */,
+				A1487E83DE8FF6B40193CEE6A95A7CD0 /* AUNavigationMenuController-prefix.pch */,
+				1E5D41614CB3856D4B8558C93BA83FC1 /* AUNavigationMenuController-umbrella.h */,
+				F9AC078144C14E9B9E78B9F711CDAE72 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/AUNavigationMenuController";
 			sourceTree = "<group>";
 		};
-		4D592F7443334CCFB9DCC6257C5EE905 /* AUNavigationMenuController */ = {
+		5955F3AC42744972527E4BA426BAB2F5 /* AUNavigationMenuController */ = {
 			isa = PBXGroup;
 			children = (
-				59C1C52EA017ED75C3DD137688D3551D /* AUNavigationMenuController */,
-				E0F6E0CB1A818281392408F6D3B86D1B /* Support Files */,
+				E1B4D5B5201ECA7D683921BCA4ECB473 /* AUNavigationMenuCell.swift */,
+				B8C2AE93241ED2B26AFF99797E100E4C /* AUNavigationMenuController.swift */,
+				A706C90F3748E8F5D4F26A7D92C18C01 /* NavigationMenuItem.swift */,
+				16ADD30E28029B73F35B45EA7C3B5413 /* Neon.swift */,
+				40D925DF9B33301B535310EEF034FC94 /* NeonAlignable.swift */,
+				FEE25582AB500A945F97E4E4693BF25F /* NeonAnchorable.swift */,
+				CFA06EF427D9DA6951C2765F5FCFCF99 /* NeonExtensions.swift */,
+				5B5D001500F899A37897D908CC387E85 /* NeonFrameable.swift */,
+				6E1073373A31C560961AECC6E96D3FA4 /* NeonGroupable.swift */,
+				02CF27E222BBB83FF127A14F656CEAED /* Support Files */,
 			);
 			name = AUNavigationMenuController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		59C1C52EA017ED75C3DD137688D3551D /* AUNavigationMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				63923F1FC9791E42EF7D5B11C1CE446D /* Classes */,
-			);
 			path = AUNavigationMenuController;
-			sourceTree = "<group>";
-		};
-		63923F1FC9791E42EF7D5B11C1CE446D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5AFD5CC51DE8E990005F504C /* Neon.swift */,
-				5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */,
-				5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */,
-				5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */,
-				5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */,
-				5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */,
-				5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */,
-				5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */,
-				5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -141,27 +130,36 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8139647E4F77386522D13A210E1D56CC /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				309259C6EFB9283B47870009961015CE /* Products */,
-				B0CF7047F82EE572338138157DF96C2B /* Targets Support Files */,
+				B6831DE53A232EA5A2D868F7A8831F31 /* Pods */,
+				9861205A5101099CE684D93CF54D1FDB /* Products */,
+				955EF3EF2C6510535FEAA96880A12125 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8139647E4F77386522D13A210E1D56CC /* Development Pods */ = {
+		955EF3EF2C6510535FEAA96880A12125 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4D592F7443334CCFB9DCC6257C5EE905 /* AUNavigationMenuController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B0CF7047F82EE572338138157DF96C2B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5F576451D63F6E2AEB49FAEF27F3C8C /* Pods-AUNavigationMenuController_Tests */,
+				EA09CCFF898C4A22E0A632E6E5C6E28F /* Pods-TestMyCocoapod */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9861205A5101099CE684D93CF54D1FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDB7C8A4ED0EC3BC31EA97BAC2C7CDA0 /* AUNavigationMenuController.framework */,
+				B744C14E27460B77FBFCCA5566EF188B /* Pods_TestMyCocoapod.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6831DE53A232EA5A2D868F7A8831F31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5955F3AC42744972527E4BA426BAB2F5 /* AUNavigationMenuController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -172,85 +170,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E0F6E0CB1A818281392408F6D3B86D1B /* Support Files */ = {
+		EA09CCFF898C4A22E0A632E6E5C6E28F /* Pods-TestMyCocoapod */ = {
 			isa = PBXGroup;
 			children = (
-				8FD9557F119BEF8CC12C73FE6D773E30 /* AUNavigationMenuController.modulemap */,
-				1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */,
-				AABF6D7E57722AF35ED8EE443F02F424 /* AUNavigationMenuController-dummy.m */,
-				BFCB7CA78FDCD9272292F88732135C4F /* AUNavigationMenuController-prefix.pch */,
-				57655E9D5D36884D60D2584F2A7C4FB9 /* AUNavigationMenuController-umbrella.h */,
-				3B51976705781AE7B226732ED1607DED /* Info.plist */,
+				4FCBADB5EFCC4F5621DB0282C54B152D /* Info.plist */,
+				200BCF733ACAD829360C337800B7F4C1 /* Pods-TestMyCocoapod.modulemap */,
+				884891A61B313523DEA0DDE5678011B7 /* Pods-TestMyCocoapod-acknowledgements.markdown */,
+				1B244DCF779071E6F9367B2CDDCF15C8 /* Pods-TestMyCocoapod-acknowledgements.plist */,
+				D90BB40A5AC933418D597171AB8E4081 /* Pods-TestMyCocoapod-dummy.m */,
+				B8261E79DBEC56A13CA1776B73AF6D6A /* Pods-TestMyCocoapod-frameworks.sh */,
+				8E982CE7B6BBA05C9BD691DFEC836550 /* Pods-TestMyCocoapod-resources.sh */,
+				7031B5E8D2D4F95C9790950B8E46FC36 /* Pods-TestMyCocoapod-umbrella.h */,
+				1ACA18193C1DEF3C7C02A3B351A52A20 /* Pods-TestMyCocoapod.debug.xcconfig */,
+				E56B4C0C4EFB1F02ECDF5BD1FC749F09 /* Pods-TestMyCocoapod.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AUNavigationMenuController";
-			sourceTree = "<group>";
-		};
-		E5F576451D63F6E2AEB49FAEF27F3C8C /* Pods-AUNavigationMenuController_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				589BEFFE5C40E7AA4413AFFDABDBC9CF /* Info.plist */,
-				8576F01659408FC73C07F9B84E73B77A /* Pods-AUNavigationMenuController_Tests.modulemap */,
-				1E6425C66CB4495B181F9A5BF3356384 /* Pods-AUNavigationMenuController_Tests-acknowledgements.markdown */,
-				D1EDFAE87DE573E153AD47F4A41CAE55 /* Pods-AUNavigationMenuController_Tests-acknowledgements.plist */,
-				8641BEC65355453B8C190B195E8498FD /* Pods-AUNavigationMenuController_Tests-dummy.m */,
-				A9D0424C0019CA168897B0F31DE85666 /* Pods-AUNavigationMenuController_Tests-frameworks.sh */,
-				5DD7203CE1245F614E07983854D654D3 /* Pods-AUNavigationMenuController_Tests-resources.sh */,
-				A2C94461D3BD87C9A1C3EDAC00435057 /* Pods-AUNavigationMenuController_Tests-umbrella.h */,
-				5C98D133B0B607D3829AD24CE350EF28 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */,
-				43D92B5A10C999AB8296A152B13DD993 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */,
-			);
-			name = "Pods-AUNavigationMenuController_Tests";
-			path = "Target Support Files/Pods-AUNavigationMenuController_Tests";
+			name = "Pods-TestMyCocoapod";
+			path = "Target Support Files/Pods-TestMyCocoapod";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9FBD56607F09F2C1F9D3CE1AF17A3207 /* Headers */ = {
+		9CA02830139BD476ABC8E884B8EFAE30 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F508F8017B8124ED3B4FDCADA685718 /* AUNavigationMenuController-umbrella.h in Headers */,
+				989F0EE58C5BE98389FDF1F232C080A1 /* AUNavigationMenuController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D756DBB4F07566015AB6C47724403CA8 /* Headers */ = {
+		DC07BB9D0E5E8E2EEE8F3741EF10A94A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1980BBBDCDFF840877777E0DDC9BB83A /* Pods-AUNavigationMenuController_Tests-umbrella.h in Headers */,
+				197F7ECA820095DA5765E8CF552F92B1 /* Pods-TestMyCocoapod-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		70C78D128E1077EDE2FA2C764CBAB1DF /* Pods-AUNavigationMenuController_Tests */ = {
+		36B716606C235B8425E67705BAEDD2EA /* Pods-TestMyCocoapod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5941B1F4C5D60A98FCE26FDCCC17DEBB /* Build configuration list for PBXNativeTarget "Pods-AUNavigationMenuController_Tests" */;
+			buildConfigurationList = 18202C1CDC9B0E3614E4D0278DE2B802 /* Build configuration list for PBXNativeTarget "Pods-TestMyCocoapod" */;
 			buildPhases = (
-				0FE6B1C4698CE3EC64A982C5D1B8BD39 /* Sources */,
-				20CF75EFE4ED0087BA2685186F67A449 /* Frameworks */,
-				D756DBB4F07566015AB6C47724403CA8 /* Headers */,
+				D6EC04CC18A42C22B5BBC7DD6C62D990 /* Sources */,
+				2C5B58181892B45BF734DDA765D26257 /* Frameworks */,
+				DC07BB9D0E5E8E2EEE8F3741EF10A94A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6675A9051656D1EF5A3E2ECDCBA30A38 /* PBXTargetDependency */,
+				F59F847AB7A406DBAE999F89E2CB0501 /* PBXTargetDependency */,
 			);
-			name = "Pods-AUNavigationMenuController_Tests";
-			productName = "Pods-AUNavigationMenuController_Tests";
-			productReference = 63A527FB3309DF9F8527763FF38557FF /* Pods_AUNavigationMenuController_Tests.framework */;
+			name = "Pods-TestMyCocoapod";
+			productName = "Pods-TestMyCocoapod";
+			productReference = B744C14E27460B77FBFCCA5566EF188B /* Pods_TestMyCocoapod.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8A9F959E5D71614DD35773D75D93FC01 /* AUNavigationMenuController */ = {
+		6DDD38447237C7028B3F560AF5EB2821 /* AUNavigationMenuController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D85A3E018E4F89CD61E18F05D8A05B4D /* Build configuration list for PBXNativeTarget "AUNavigationMenuController" */;
+			buildConfigurationList = F2C9B9A54983DF1C0B448F3374A50FA2 /* Build configuration list for PBXNativeTarget "AUNavigationMenuController" */;
 			buildPhases = (
-				0A7A709AB356CED190C936BED8935E3C /* Sources */,
-				89C89A324CC7AB71706DCE3A499DADB4 /* Frameworks */,
-				9FBD56607F09F2C1F9D3CE1AF17A3207 /* Headers */,
+				6C799AA4C7FF3723DD0168EEC6F13D41 /* Sources */,
+				A8DFDD2E143E4D22585D9D7CBBA995FE /* Frameworks */,
+				9CA02830139BD476ABC8E884B8EFAE30 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -258,7 +242,7 @@
 			);
 			name = AUNavigationMenuController;
 			productName = AUNavigationMenuController;
-			productReference = 50BA275F9E22CC377963C2C884D7B456 /* AUNavigationMenuController.framework */;
+			productReference = CDB7C8A4ED0EC3BC31EA97BAC2C7CDA0 /* AUNavigationMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -269,14 +253,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					70C78D128E1077EDE2FA2C764CBAB1DF = {
-						LastSwiftMigration = 0810;
-					};
-					8A9F959E5D71614DD35773D75D93FC01 = {
-						LastSwiftMigration = 0810;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -286,202 +262,57 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 309259C6EFB9283B47870009961015CE /* Products */;
+			productRefGroup = 9861205A5101099CE684D93CF54D1FDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A9F959E5D71614DD35773D75D93FC01 /* AUNavigationMenuController */,
-				70C78D128E1077EDE2FA2C764CBAB1DF /* Pods-AUNavigationMenuController_Tests */,
+				6DDD38447237C7028B3F560AF5EB2821 /* AUNavigationMenuController */,
+				36B716606C235B8425E67705BAEDD2EA /* Pods-TestMyCocoapod */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A7A709AB356CED190C936BED8935E3C /* Sources */ = {
+		6C799AA4C7FF3723DD0168EEC6F13D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AFD5CD01DE8E990005F504C /* NeonGroupable.swift in Sources */,
-				5AFD5CC31DE8E97D005F504C /* AUNavigationMenuCell.swift in Sources */,
-				5AFD5CCB1DE8E990005F504C /* Neon.swift in Sources */,
-				5AFD5CCC1DE8E990005F504C /* NeonAlignable.swift in Sources */,
-				5AFD5CCF1DE8E990005F504C /* NeonFrameable.swift in Sources */,
-				780AB9F3934C6544C96F0D4B5ED91E80 /* AUNavigationMenuController-dummy.m in Sources */,
-				5AFD5CC41DE8E97D005F504C /* NavigationMenuItem.swift in Sources */,
-				5AFD5CCD1DE8E990005F504C /* NeonAnchorable.swift in Sources */,
-				5AFD5CCE1DE8E990005F504C /* NeonExtensions.swift in Sources */,
-				5AFD5CC21DE8E97D005F504C /* AUNavigationMenuController.swift in Sources */,
+				18BDBB5D1BBC904DAEFD3C3351AEAA6A /* AUNavigationMenuCell.swift in Sources */,
+				9A5420923BD3C283ABD311948641E8DA /* AUNavigationMenuController-dummy.m in Sources */,
+				1BA85027656B38AA36767F4219E4EFF2 /* AUNavigationMenuController.swift in Sources */,
+				9ED853D4995239899E5AFB096D461D80 /* NavigationMenuItem.swift in Sources */,
+				6DC3BDF3EA8B65AA10622B9C3E90DB92 /* Neon.swift in Sources */,
+				A62863673EC15B6CCFCAD75513B09AF2 /* NeonAlignable.swift in Sources */,
+				27F274F4F1903307E268DA57CA51B120 /* NeonAnchorable.swift in Sources */,
+				AC1B1B969E4E68290107F644C37D4872 /* NeonExtensions.swift in Sources */,
+				F01656CB6AD227C5C4DF1D6138AA9C3F /* NeonFrameable.swift in Sources */,
+				38DA95FAECD54338541C33D88F9AA9CA /* NeonGroupable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0FE6B1C4698CE3EC64A982C5D1B8BD39 /* Sources */ = {
+		D6EC04CC18A42C22B5BBC7DD6C62D990 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07491C0A3C9C2335747E70096D736F0 /* Pods-AUNavigationMenuController_Tests-dummy.m in Sources */,
+				C4686365C5C848B11A13BACC3D48E41D /* Pods-TestMyCocoapod-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6675A9051656D1EF5A3E2ECDCBA30A38 /* PBXTargetDependency */ = {
+		F59F847AB7A406DBAE999F89E2CB0501 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AUNavigationMenuController;
-			target = 8A9F959E5D71614DD35773D75D93FC01 /* AUNavigationMenuController */;
-			targetProxy = 9DFAEB4B7A9F6AC6C4FC3E0EAA5DBCEE /* PBXContainerItemProxy */;
+			target = 6DDD38447237C7028B3F560AF5EB2821 /* AUNavigationMenuController */;
+			targetProxy = 30B54406061EF2A5D77A9126AD6D5A1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14C27A069C24BDDB37E6A364FE6CCE65 /* Debug */ = {
+		99283061021677E59C0AFA7323F0F856 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C98D133B0B607D3829AD24CE350EF28 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AUNavigationMenuController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AUNavigationMenuController_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		87413A05D03F790A5823F03A6D1F3797 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43D92B5A10C999AB8296A152B13DD993 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AUNavigationMenuController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AUNavigationMenuController_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		930BB8ECB61EEC8F7CDC7272BC3BE061 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AUNavigationMenuController/AUNavigationMenuController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AUNavigationMenuController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AUNavigationMenuController/AUNavigationMenuController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AUNavigationMenuController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		983518F6BA931B65EC73C9F079EA3735 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */;
+			baseConfigurationReference = E0481AC19D1947B09892A2EC5836C988 /* AUNavigationMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -512,7 +343,74 @@
 			};
 			name = Debug;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		A4F52ADA961D176F38530120146FDD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56B4C0C4EFB1F02ECDF5BD1FC749F09 /* Pods-TestMyCocoapod.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TestMyCocoapod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestMyCocoapod/Pods-TestMyCocoapod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TestMyCocoapod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E5D9788EC0C4286C593A7F01CF52BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0481AC19D1947B09892A2EC5836C988 /* AUNavigationMenuController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AUNavigationMenuController/AUNavigationMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AUNavigationMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AUNavigationMenuController/AUNavigationMenuController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AUNavigationMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -548,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -556,32 +454,108 @@
 			};
 			name = Debug;
 		};
+		DD464BE16922E9D08272204EFA20875B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ACA18193C1DEF3C7C02A3B351A52A20 /* Pods-TestMyCocoapod.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TestMyCocoapod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestMyCocoapod/Pods-TestMyCocoapod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TestMyCocoapod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18202C1CDC9B0E3614E4D0278DE2B802 /* Build configuration list for PBXNativeTarget "Pods-TestMyCocoapod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD464BE16922E9D08272204EFA20875B /* Debug */,
+				A4F52ADA961D176F38530120146FDD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5941B1F4C5D60A98FCE26FDCCC17DEBB /* Build configuration list for PBXNativeTarget "Pods-AUNavigationMenuController_Tests" */ = {
+		F2C9B9A54983DF1C0B448F3374A50FA2 /* Build configuration list for PBXNativeTarget "AUNavigationMenuController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14C27A069C24BDDB37E6A364FE6CCE65 /* Debug */,
-				87413A05D03F790A5823F03A6D1F3797 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D85A3E018E4F89CD61E18F05D8A05B4D /* Build configuration list for PBXNativeTarget "AUNavigationMenuController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				983518F6BA931B65EC73C9F079EA3735 /* Debug */,
-				930BB8ECB61EEC8F7CDC7272BC3BE061 /* Release */,
+				99283061021677E59C0AFA7323F0F856 /* Debug */,
+				C7E5D9788EC0C4286C593A7F01CF52BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

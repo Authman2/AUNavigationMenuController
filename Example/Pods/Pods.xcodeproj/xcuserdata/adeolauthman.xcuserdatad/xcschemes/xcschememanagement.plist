@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AUNavigationMenuController_Tests.xcscheme</key>
+		<key>Pods-TestMyCocoapod.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>70C78D128E1077EDE2FA2C764CBAB1DF</key>
+		<key>36B716606C235B8425E67705BAEDD2EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A9F959E5D71614DD35773D75D93FC01</key>
+		<key>6DDD38447237C7028B3F560AF5EB2821</key>
 		<dict>
 			<key>primary</key>
 			<true/>

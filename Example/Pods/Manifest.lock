@@ -1,16 +1,12 @@
 PODS:
-  - AUNavigationMenuController (0.1.0)
+  - AUNavigationMenuController (0.4.0)
 
 DEPENDENCIES:
-  - AUNavigationMenuController (from `../`)
-
-EXTERNAL SOURCES:
-  AUNavigationMenuController:
-    :path: ../
+  - AUNavigationMenuController
 
 SPEC CHECKSUMS:
-  AUNavigationMenuController: 40d99836d88771fd8288e36535129e50d0db5bf6
+  AUNavigationMenuController: f015c0c1e67728fa5931a9f48d6d273d9dc0b8cb
 
-PODFILE CHECKSUM: 4e718174eb490a1fb47df4025c0626ca646759df
+PODFILE CHECKSUM: f914780c9c4c19a156de2aa4c5eec0ee2b77221d
 
 COCOAPODS: 1.1.1
