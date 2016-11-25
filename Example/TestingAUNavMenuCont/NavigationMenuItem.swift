@@ -49,14 +49,17 @@ public class NavigationMenuItem {
      */
     public func goToDestination() {
         let navCont = current.navigationController as! AUNavigationMenuController;
-        if destination.hashValue != current.hashValue {
-            destination.navigationItem.hidesBackButton = true;
-            navCont.show(destination, sender: current);
+        
+        // If you aren't already there, go there. Otherwise, just close the menu.
+        if( navCont.topViewController != destination ) {
+        
+            self.destination.navigationItem.hidesBackButton = true;
+            navCont.show(self.destination, sender: self.current);
+        
         } else {
             navCont.togglePulldownMenu();
+            
         }
     }
-    
-    
     
 }
