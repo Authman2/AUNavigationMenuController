@@ -1,0 +1,22 @@
+{
+  "name": "AUNavigationMenuController",
+  "version": "0.1.0",
+  "summary": "A short description of AUNavigationMenuController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AUNavigationMenuController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Adeola Uthman": "authman2@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AUNavigationMenuController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AUNavigationMenuController/Classes/**/*"
+}

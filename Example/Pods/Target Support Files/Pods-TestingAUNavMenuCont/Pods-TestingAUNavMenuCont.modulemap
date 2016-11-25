@@ -1,6 +1,0 @@
-framework module Pods_TestingAUNavMenuCont {
-  umbrella header "Pods-TestingAUNavMenuCont-umbrella.h"
-
-  export *
-  module * { export * }
-}

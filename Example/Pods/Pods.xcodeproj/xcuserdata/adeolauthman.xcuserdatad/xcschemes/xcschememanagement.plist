@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Neon.xcscheme</key>
+		<key>AUNavigationMenuController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-TestingAUNavMenuCont.xcscheme</key>
+		<key>Pods-AUNavigationMenuController_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>58FE8F6773770B7A559123A914831205</key>
+		<key>70C78D128E1077EDE2FA2C764CBAB1DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF630AB9720279E0A1F904F21F31CF0B</key>
+		<key>8A9F959E5D71614DD35773D75D93FC01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

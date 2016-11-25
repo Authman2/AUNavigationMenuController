@@ -1,12 +1,16 @@
 PODS:
-  - Neon (0.4.0)
+  - AUNavigationMenuController (0.1.0)
 
 DEPENDENCIES:
-  - Neon
+  - AUNavigationMenuController (from `../`)
+
+EXTERNAL SOURCES:
+  AUNavigationMenuController:
+    :path: ../
 
 SPEC CHECKSUMS:
-  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  AUNavigationMenuController: 40d99836d88771fd8288e36535129e50d0db5bf6
 
-PODFILE CHECKSUM: ccec091685406768fe8f6aa3f2e20771d28bc66a
+PODFILE CHECKSUM: 4e718174eb490a1fb47df4025c0626ca646759df
 
 COCOAPODS: 1.1.1
