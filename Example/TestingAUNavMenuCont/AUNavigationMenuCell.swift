@@ -12,7 +12,7 @@ import Neon
 public class AUNavigationMenuCell: UICollectionViewCell {
     
     
-    // The menu item object.
+    // The menu item object (used for grabbing data).
     public var navMenuItem: NavigationMenuItem!;
     
     

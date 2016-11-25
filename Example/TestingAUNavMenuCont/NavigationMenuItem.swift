@@ -38,7 +38,7 @@ public class NavigationMenuItem {
     //
     /////////////////////////
     
-    init(name: String, image: UIImage?, navCont: AUNavigationMenuController, destination: UIViewController?) {
+    init(name: String, image: UIImage?, navCont: AUNavigationMenuController, destination: UIViewController) {
         self.name = name;
         self.image = image;
         self.destination = destination;

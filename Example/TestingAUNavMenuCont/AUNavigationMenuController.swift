@@ -33,7 +33,11 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     
-    /* Initializers and Basic Setup */
+    /////////////////////////
+    //
+    //  Initializers and Basic Setup
+    //
+    /////////////////////////
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
@@ -69,8 +73,6 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         // Creates a menu view and adds it behind everything.
         addMenuView();
     }
-    
-    
     
     
     
@@ -176,9 +178,17 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     
+    
+    /* Adds new menu item.
+     */
+    public func addMenuItem(item: NavigationMenuItem) {
+        menuItems.append(item);
+    }
+    
+    
     /* Appends a new menu item onto the menu.
      */
-    public func addMenuItem(name: String, image: UIImage?, destination: UIViewController?, asHome: Bool) {
+    public func addMenuItem(name: String, image: UIImage?, destination: UIViewController) {
         let n = NavigationMenuItem(name: name, image: image, navCont: self, destination: destination);
         menuItems.append(n);
         collectionView.reloadData();
