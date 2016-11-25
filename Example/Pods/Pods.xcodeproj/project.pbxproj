@@ -45,12 +45,12 @@
 		5A83867E1DE8DED500D9581B /* AUNavigationMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuController.swift; sourceTree = "<group>"; };
 		5A83867F1DE8DED500D9581B /* AUNavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuCell.swift; sourceTree = "<group>"; };
 		5A8386801DE8DED500D9581B /* NavigationMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuItem.swift; sourceTree = "<group>"; };
-		5A8386861DE8DF2C00D9581B /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = ../../AUNavigationMenuController/Classes/Neon.swift; sourceTree = "<group>"; };
-		5A8386871DE8DF2C00D9581B /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeonAlignable.swift; path = ../../AUNavigationMenuController/Classes/NeonAlignable.swift; sourceTree = "<group>"; };
-		5A8386881DE8DF2C00D9581B /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeonAnchorable.swift; path = ../../AUNavigationMenuController/Classes/NeonAnchorable.swift; sourceTree = "<group>"; };
-		5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeonExtensions.swift; path = ../../AUNavigationMenuController/Classes/NeonExtensions.swift; sourceTree = "<group>"; };
-		5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeonFrameable.swift; path = ../../AUNavigationMenuController/Classes/NeonFrameable.swift; sourceTree = "<group>"; };
-		5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeonGroupable.swift; path = ../../AUNavigationMenuController/Classes/NeonGroupable.swift; sourceTree = "<group>"; };
+		5A8386861DE8DF2C00D9581B /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = ../../AUNavigationMenuController/Classes/Neon.swift; sourceTree = SOURCE_ROOT; };
+		5A8386871DE8DF2C00D9581B /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAlignable.swift; sourceTree = "<group>"; };
+		5A8386881DE8DF2C00D9581B /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAnchorable.swift; sourceTree = "<group>"; };
+		5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonExtensions.swift; sourceTree = "<group>"; };
+		5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonFrameable.swift; sourceTree = "<group>"; };
+		5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonGroupable.swift; sourceTree = "<group>"; };
 		5C98D133B0B607D3829AD24CE350EF28 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AUNavigationMenuController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD7203CE1245F614E07983854D654D3 /* Pods-AUNavigationMenuController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AUNavigationMenuController_Tests-resources.sh"; sourceTree = "<group>"; };
 		63A527FB3309DF9F8527763FF38557FF /* Pods_AUNavigationMenuController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUNavigationMenuController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +113,7 @@
 			path = AUNavigationMenuController;
 			sourceTree = "<group>";
 		};
-		5A8386931DE8DF5800D9581B /* Neon */ = {
+		63923F1FC9791E42EF7D5B11C1CE446D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				5A8386861DE8DF2C00D9581B /* Neon.swift */,
@@ -122,13 +122,6 @@
 				5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */,
 				5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */,
 				5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */,
-			);
-			name = Neon;
-			sourceTree = "<group>";
-		};
-		63923F1FC9791E42EF7D5B11C1CE446D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
 				5A83867E1DE8DED500D9581B /* AUNavigationMenuController.swift */,
 				5A83867F1DE8DED500D9581B /* AUNavigationMenuCell.swift */,
 				5A8386801DE8DED500D9581B /* NavigationMenuItem.swift */,
@@ -148,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5A8386931DE8DF5800D9581B /* Neon */,
 				8139647E4F77386522D13A210E1D56CC /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				309259C6EFB9283B47870009961015CE /* Products */,
