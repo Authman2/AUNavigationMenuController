@@ -20,6 +20,7 @@ AUNavigationMenuController is a subclass of UINavigationController. When the nav
 - Add menu items for each view controller that you will need in you app, making sure to give it a name, an optional image, and a destination view controller. The destination is the view controller that the menu item will take the user to.
 <br><img src="https://github.com/Authman2/AUNavigationMenuController/blob/master/Tutorial/Tutorial5.png" alt="tutorial5" width="500" height="400">
 - Build and run your application!
+<br>
 
 ## Requirements
 
