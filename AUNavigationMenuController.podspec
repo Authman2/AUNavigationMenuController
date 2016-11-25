@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AUNavigationMenuController'
-  s.version          = '0.3.0'
-  s.summary          = 'Look on Github.'
+  s.version          = '0.4.0'
+  s.summary          = 'Creates a menu that slides down from the top of the screen.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Look on GIthub.
+After tapping on the navigation bar, a menu will slide down from the top of the screen, allowing the user to go to different pages within the application.
                        DESC
 
   s.homepage         = 'https://github.com/Authman2/AUNavigationMenuController'
