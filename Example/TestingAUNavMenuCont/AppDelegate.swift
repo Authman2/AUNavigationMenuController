@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let vc = ViewController();
-        let navCont = AUNavigationMenuController(rootViewController: vc);
+        let navCont = NavCont(rootViewController: vc);
         window?.rootViewController = navCont;
         
         // Override point for customization after application launch.

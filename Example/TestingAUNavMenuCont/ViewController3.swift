@@ -1,5 +1,5 @@
 //
-//  ViewController2.swift
+//  ViewController3.swift
 //  TestingAUNavMenuCont
 //
 //  Created by Adeola Uthman on 11/25/16.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController3: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.blue;
-        
+        view.backgroundColor = UIColor.red;
     }
-
 }

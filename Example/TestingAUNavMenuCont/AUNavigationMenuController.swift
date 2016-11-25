@@ -178,13 +178,11 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     /* Appends a new menu item onto the menu.
      */
-    public func addMenuItem(name: String, image: UIImage?, current: UIViewController, destination: UIViewController?) {
-        let n = NavigationMenuItem(name: name, image: image, current: current, destination: destination);
+    public func addMenuItem(name: String, image: UIImage?, destination: UIViewController?, asHome: Bool) {
+        let n = NavigationMenuItem(name: name, image: image, navCont: self, destination: destination);
         menuItems.append(n);
         collectionView.reloadData();
     }
-    
-    
     
     
     
@@ -223,7 +221,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        menuItems[indexPath.item].goToDestination();
+        menuItems[indexPath.item].goToDestination(toggle: true);
     }
     
 }

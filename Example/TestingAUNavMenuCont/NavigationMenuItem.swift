@@ -24,8 +24,10 @@ public class NavigationMenuItem {
     public var destination: UIViewController!;
     
     
-    // The view that you are currently on (used for transporting to the next one).
-    public var current: UIViewController!;
+    // The overall navigation controller.
+    let navCont: AUNavigationMenuController!;
+    
+    
     
     
     
@@ -36,30 +38,34 @@ public class NavigationMenuItem {
     //
     /////////////////////////
     
-    init(name: String, image: UIImage?, current: UIViewController, destination: UIViewController?) {
+    init(name: String, image: UIImage?, navCont: AUNavigationMenuController, destination: UIViewController?) {
         self.name = name;
         self.image = image;
-        self.current = current;
         self.destination = destination;
+        self.navCont = navCont;
+        navCont.navigationItem.hidesBackButton = true;
     }
     
     
     
     /* Goes to the destination view controller.
      */
-    public func goToDestination() {
-        let navCont = current.navigationController as! AUNavigationMenuController;
+    public func goToDestination(toggle: Bool) {
         
-        // If you aren't already there, go there. Otherwise, just close the menu.
-        if( navCont.topViewController != destination ) {
-        
-            self.destination.navigationItem.hidesBackButton = true;
-            navCont.show(self.destination, sender: self.current);
-        
+        if navCont.topViewController != destination {
+            
+            navCont.popToRootViewController(animated: false);
+            navCont.pushViewController(destination, animated: false);
+            destination.navigationItem.hidesBackButton = true;
+            
+            if(toggle) {
+                navCont.togglePulldownMenu();
+            }
         } else {
             navCont.togglePulldownMenu();
-            
         }
+        
+        
     }
     
 }
