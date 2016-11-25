@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		1980BBBDCDFF840877777E0DDC9BB83A /* Pods-AUNavigationMenuController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C94461D3BD87C9A1C3EDAC00435057 /* Pods-AUNavigationMenuController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F508F8017B8124ED3B4FDCADA685718 /* AUNavigationMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57655E9D5D36884D60D2584F2A7C4FB9 /* AUNavigationMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A8386811DE8DED500D9581B /* AUNavigationMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A83867E1DE8DED500D9581B /* AUNavigationMenuController.swift */; };
-		5A8386821DE8DED500D9581B /* AUNavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A83867F1DE8DED500D9581B /* AUNavigationMenuCell.swift */; };
-		5A8386831DE8DED500D9581B /* NavigationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8386801DE8DED500D9581B /* NavigationMenuItem.swift */; };
-		5A83868C1DE8DF2C00D9581B /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8386861DE8DF2C00D9581B /* Neon.swift */; };
-		5A83868D1DE8DF2C00D9581B /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8386871DE8DF2C00D9581B /* NeonAlignable.swift */; };
-		5A83868E1DE8DF2C00D9581B /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8386881DE8DF2C00D9581B /* NeonAnchorable.swift */; };
-		5A83868F1DE8DF2C00D9581B /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */; };
-		5A8386901DE8DF2C00D9581B /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */; };
-		5A8386911DE8DF2C00D9581B /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */; };
+		5AFD5CC21DE8E97D005F504C /* AUNavigationMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */; };
+		5AFD5CC31DE8E97D005F504C /* AUNavigationMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */; };
+		5AFD5CC41DE8E97D005F504C /* NavigationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */; };
+		5AFD5CCB1DE8E990005F504C /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC51DE8E990005F504C /* Neon.swift */; };
+		5AFD5CCC1DE8E990005F504C /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */; };
+		5AFD5CCD1DE8E990005F504C /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */; };
+		5AFD5CCE1DE8E990005F504C /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */; };
+		5AFD5CCF1DE8E990005F504C /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */; };
+		5AFD5CD01DE8E990005F504C /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */; };
 		780AB9F3934C6544C96F0D4B5ED91E80 /* AUNavigationMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AABF6D7E57722AF35ED8EE443F02F424 /* AUNavigationMenuController-dummy.m */; };
 		A07491C0A3C9C2335747E70096D736F0 /* Pods-AUNavigationMenuController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8641BEC65355453B8C190B195E8498FD /* Pods-AUNavigationMenuController_Tests-dummy.m */; };
 		C465B1C4FF20CB36AC86259DDAAE5931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -42,15 +42,15 @@
 		50BA275F9E22CC377963C2C884D7B456 /* AUNavigationMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUNavigationMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57655E9D5D36884D60D2584F2A7C4FB9 /* AUNavigationMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AUNavigationMenuController-umbrella.h"; sourceTree = "<group>"; };
 		589BEFFE5C40E7AA4413AFFDABDBC9CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A83867E1DE8DED500D9581B /* AUNavigationMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuController.swift; sourceTree = "<group>"; };
-		5A83867F1DE8DED500D9581B /* AUNavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuCell.swift; sourceTree = "<group>"; };
-		5A8386801DE8DED500D9581B /* NavigationMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuItem.swift; sourceTree = "<group>"; };
-		5A8386861DE8DF2C00D9581B /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = ../../AUNavigationMenuController/Classes/Neon.swift; sourceTree = SOURCE_ROOT; };
-		5A8386871DE8DF2C00D9581B /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAlignable.swift; sourceTree = "<group>"; };
-		5A8386881DE8DF2C00D9581B /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAnchorable.swift; sourceTree = "<group>"; };
-		5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonExtensions.swift; sourceTree = "<group>"; };
-		5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonFrameable.swift; sourceTree = "<group>"; };
-		5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonGroupable.swift; sourceTree = "<group>"; };
+		5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuController.swift; sourceTree = "<group>"; };
+		5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNavigationMenuCell.swift; sourceTree = "<group>"; };
+		5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuItem.swift; sourceTree = "<group>"; };
+		5AFD5CC51DE8E990005F504C /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neon.swift; sourceTree = "<group>"; };
+		5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAlignable.swift; sourceTree = "<group>"; };
+		5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAnchorable.swift; sourceTree = "<group>"; };
+		5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonExtensions.swift; sourceTree = "<group>"; };
+		5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonFrameable.swift; sourceTree = "<group>"; };
+		5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonGroupable.swift; sourceTree = "<group>"; };
 		5C98D133B0B607D3829AD24CE350EF28 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AUNavigationMenuController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD7203CE1245F614E07983854D654D3 /* Pods-AUNavigationMenuController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AUNavigationMenuController_Tests-resources.sh"; sourceTree = "<group>"; };
 		63A527FB3309DF9F8527763FF38557FF /* Pods_AUNavigationMenuController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUNavigationMenuController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,15 +116,15 @@
 		63923F1FC9791E42EF7D5B11C1CE446D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5A8386861DE8DF2C00D9581B /* Neon.swift */,
-				5A8386871DE8DF2C00D9581B /* NeonAlignable.swift */,
-				5A8386881DE8DF2C00D9581B /* NeonAnchorable.swift */,
-				5A8386891DE8DF2C00D9581B /* NeonExtensions.swift */,
-				5A83868A1DE8DF2C00D9581B /* NeonFrameable.swift */,
-				5A83868B1DE8DF2C00D9581B /* NeonGroupable.swift */,
-				5A83867E1DE8DED500D9581B /* AUNavigationMenuController.swift */,
-				5A83867F1DE8DED500D9581B /* AUNavigationMenuCell.swift */,
-				5A8386801DE8DED500D9581B /* NavigationMenuItem.swift */,
+				5AFD5CC51DE8E990005F504C /* Neon.swift */,
+				5AFD5CC61DE8E990005F504C /* NeonAlignable.swift */,
+				5AFD5CC71DE8E990005F504C /* NeonAnchorable.swift */,
+				5AFD5CC81DE8E990005F504C /* NeonExtensions.swift */,
+				5AFD5CC91DE8E990005F504C /* NeonFrameable.swift */,
+				5AFD5CCA1DE8E990005F504C /* NeonGroupable.swift */,
+				5AFD5CBF1DE8E97D005F504C /* AUNavigationMenuController.swift */,
+				5AFD5CC01DE8E97D005F504C /* AUNavigationMenuCell.swift */,
+				5AFD5CC11DE8E97D005F504C /* NavigationMenuItem.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -301,16 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A8386821DE8DED500D9581B /* AUNavigationMenuCell.swift in Sources */,
-				5A8386911DE8DF2C00D9581B /* NeonGroupable.swift in Sources */,
-				5A83868D1DE8DF2C00D9581B /* NeonAlignable.swift in Sources */,
-				5A8386811DE8DED500D9581B /* AUNavigationMenuController.swift in Sources */,
+				5AFD5CD01DE8E990005F504C /* NeonGroupable.swift in Sources */,
+				5AFD5CC31DE8E97D005F504C /* AUNavigationMenuCell.swift in Sources */,
+				5AFD5CCB1DE8E990005F504C /* Neon.swift in Sources */,
+				5AFD5CCC1DE8E990005F504C /* NeonAlignable.swift in Sources */,
+				5AFD5CCF1DE8E990005F504C /* NeonFrameable.swift in Sources */,
 				780AB9F3934C6544C96F0D4B5ED91E80 /* AUNavigationMenuController-dummy.m in Sources */,
-				5A8386831DE8DED500D9581B /* NavigationMenuItem.swift in Sources */,
-				5A83868C1DE8DF2C00D9581B /* Neon.swift in Sources */,
-				5A83868E1DE8DF2C00D9581B /* NeonAnchorable.swift in Sources */,
-				5A8386901DE8DF2C00D9581B /* NeonFrameable.swift in Sources */,
-				5A83868F1DE8DF2C00D9581B /* NeonExtensions.swift in Sources */,
+				5AFD5CC41DE8E97D005F504C /* NavigationMenuItem.swift in Sources */,
+				5AFD5CCD1DE8E990005F504C /* NeonAnchorable.swift in Sources */,
+				5AFD5CCE1DE8E990005F504C /* NeonExtensions.swift in Sources */,
+				5AFD5CC21DE8E97D005F504C /* AUNavigationMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +451,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -484,7 +483,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E9F55B045334A58DBC34BECAB5928AA /* AUNavigationMenuController.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
