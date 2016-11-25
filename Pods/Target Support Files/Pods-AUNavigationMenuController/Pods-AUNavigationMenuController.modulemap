@@ -1,0 +1,6 @@
+framework module Pods_AUNavigationMenuController {
+  umbrella header "Pods-AUNavigationMenuController-umbrella.h"
+
+  export *
+  module * { export * }
+}
