@@ -1,8 +1,8 @@
 {
   "name": "AUNavigationMenuController",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "summary": "Creates a menu that slides down from the top of the screen.",
-  "description": "After tapping on the navigation bar, a menu will slide down from the top of the screen, allowing the user to go to different pages within the application.",
+  "description": "After pressing the navigation bar, a menu will slides down from the top of the screen.",
   "homepage": "https://github.com/Authman2/AUNavigationMenuController",
   "license": {
     "type": "MIT",
@@ -13,12 +13,15 @@
   },
   "source": {
     "git": "https://github.com/Authman2/AUNavigationMenuController.git",
-    "tag": "0.4.0"
+    "tag": "0.6.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "ios": {
-    "source_files": "AUNavigationMenuController/Classes/**/*.{swift}"
+  "source_files": "AUNavigationMenuController/Classes/**/*.swift",
+  "dependencies": {
+    "Neon": [
+      "~> 0.4.0"
+    ]
   }
 }

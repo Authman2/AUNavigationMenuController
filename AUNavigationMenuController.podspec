@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AUNavigationMenuController'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'Creates a menu that slides down from the top of the screen.'
 
 # This description is used to generate tags and improve search results.
@@ -18,16 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-After tapping on the navigation bar, a menu will slide down from the top of the screen, allowing the user to go to different pages within the application.
+After pressing the navigation bar, a menu will slides down from the top of the screen.
                        DESC
 
   s.homepage         = 'https://github.com/Authman2/AUNavigationMenuController'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Adeola Uthman' => 'authman2@gmail.com' }
   s.source           = { :git => 'https://github.com/Authman2/AUNavigationMenuController.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.ios.source_files = 'AUNavigationMenuController/Classes/**/*.{swift}'
+  s.source_files = 'AUNavigationMenuController/Classes/**/*.swift'
+  
+  # s.resource_bundles = {
+  #   'AUNavigationMenuController' => ['AUNavigationMenuController/Assets/*.png']
+  # }
 
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+    s.dependency 'Neon', '~> 0.4.0'
 end

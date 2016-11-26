@@ -30,11 +30,11 @@ public extension Anchorable {
     ///
     ///   - bottom: The padding between the bottom of the view and the superview.
     ///
-    public func fillSuperview(left left: CGFloat = 0, right: CGFloat = 0, top: CGFloat = 0, bottom: CGFloat = 0) {
+    public func fillSuperview(left: CGFloat = 0, right: CGFloat = 0, top: CGFloat = 0, bottom: CGFloat = 0) {
         let width : CGFloat = superFrame.width - (left + right)
         let height : CGFloat = superFrame.height - (top + bottom)
 
-        frame = CGRectMake(left, top, width, height)
+        frame = CGRect(x: left, y: top, width: width, height: height)
     }
 
 
@@ -45,15 +45,20 @@ public extension Anchorable {
     ///
     ///   - height: The height of the view.
     ///
-    public func anchorInCenter(width width: CGFloat, height: CGFloat) {
+    public func anchorInCenter(width: CGFloat, height: CGFloat) {
         let xOrigin : CGFloat = (superFrame.width / 2.0) - (width / 2.0)
         let yOrigin : CGFloat = (superFrame.height / 2.0) - (height / 2.0)
 
-        frame = CGRectMake(xOrigin, yOrigin, width, height)
+        frame = CGRect(x: xOrigin, y: yOrigin, width: width, height: height)
 
         if height == AutoHeight {
-            self.setHeightAutomatically()
+            self.setDimensionAutomatically()
             self.anchorInCenter(width: width, height: self.height)
+        }
+
+        if width == AutoWidth {
+            self.setDimensionAutomatically()
+            self.anchorInCenter(width: self.width, height: height)
         }
     }
 
@@ -73,34 +78,40 @@ public extension Anchorable {
     ///
     ///   - height: The height of the view.
     ///
-    public func anchorInCorner(corner: Corner, xPad: CGFloat, yPad: CGFloat, width: CGFloat, height: CGFloat) {
+    public func anchorInCorner(_ corner: Corner, xPad: CGFloat, yPad: CGFloat, width: CGFloat, height: CGFloat) {
         var xOrigin : CGFloat = 0.0
         var yOrigin : CGFloat = 0.0
 
         switch corner {
-        case .TopLeft:
+        case .topLeft:
             xOrigin = xPad
             yOrigin = yPad
 
-        case .BottomLeft:
+        case .bottomLeft:
             xOrigin = xPad
             yOrigin = superFrame.height - height - yPad
 
-        case .TopRight:
+        case .topRight:
             xOrigin = superFrame.width - width - xPad
             yOrigin = yPad
 
-        case .BottomRight:
+        case .bottomRight:
             xOrigin = superFrame.width - width - xPad
             yOrigin = superFrame.height - height - yPad
         }
 
-        frame = CGRectMake(xOrigin, yOrigin, width, height)
+        frame = CGRect(x: xOrigin, y: yOrigin, width: width, height: height)
 
         if height == AutoHeight {
-            self.setHeightAutomatically()
+            self.setDimensionAutomatically()
             self.anchorInCorner(corner, xPad: xPad, yPad: yPad, width: width, height: self.height)
         }
+
+        if width == AutoWidth {
+            self.setDimensionAutomatically()
+            self.anchorInCorner(corner, xPad: xPad, yPad: yPad, width: self.width, height: height)
+        }
+
     }
 
 
@@ -120,33 +131,37 @@ public extension Anchorable {
     ///
     ///   - height: The height of the view.
     ///
-    public func anchorToEdge(edge: Edge, padding: CGFloat, width: CGFloat, height: CGFloat) {
+    public func anchorToEdge(_ edge: Edge, padding: CGFloat, width: CGFloat, height: CGFloat) {
         var xOrigin : CGFloat = 0.0
         var yOrigin : CGFloat = 0.0
 
         switch edge {
-        case .Top:
+        case .top:
             xOrigin = (superFrame.width / 2.0) - (width / 2.0)
             yOrigin = padding
 
-        case .Left:
+        case .left:
             xOrigin = padding
             yOrigin = (superFrame.height / 2.0) - (height / 2.0)
 
-        case .Bottom:
+        case .bottom:
             xOrigin = (superFrame.width / 2.0) - (width / 2.0)
             yOrigin = superFrame.height - height - padding
 
-        case .Right:
+        case .right:
             xOrigin = superFrame.width - width - padding
             yOrigin = (superFrame.height / 2.0) - (height / 2.0)
         }
 
-        frame = CGRectMake(xOrigin, yOrigin, width, height)
+        frame = CGRect(x: xOrigin, y: yOrigin, width: width, height: height)
 
         if height == AutoHeight {
-            self.setHeightAutomatically()
+            self.setDimensionAutomatically()
             self.anchorToEdge(edge, padding: padding, width: width, height: self.height)
+        }
+        if width == AutoWidth {
+            self.setDimensionAutomatically()
+            self.anchorToEdge(edge, padding: padding, width: self.width, height: height)
         }
     }
 
@@ -174,7 +189,7 @@ public extension Anchorable {
     /// the `.Left` and `.Right` will have `otherSize` applied to their width as their heights are
     /// automatically calculated.
     ///
-    public func anchorAndFillEdge(edge: Edge, xPad: CGFloat, yPad: CGFloat, otherSize: CGFloat) {
+    public func anchorAndFillEdge(_ edge: Edge, xPad: CGFloat, yPad: CGFloat, otherSize: CGFloat) {
         var xOrigin : CGFloat = 0.0
         var yOrigin : CGFloat = 0.0
         var width : CGFloat = 0.0
@@ -182,37 +197,37 @@ public extension Anchorable {
         var autoSize : Bool = false
 
         switch edge {
-        case .Top:
+        case .top:
             xOrigin = xPad
             yOrigin = yPad
             width = superFrame.width - (2 * xPad)
             height = otherSize
             autoSize = true
 
-        case .Left:
+        case .left:
             xOrigin = xPad
             yOrigin = yPad
             width = otherSize
             height = superFrame.height - (2 * yPad)
 
-        case .Bottom:
+        case .bottom:
             xOrigin = xPad
             yOrigin = superFrame.height - otherSize - yPad
             width = superFrame.width - (2 * xPad)
             height = otherSize
             autoSize = true
 
-        case .Right:
+        case .right:
             xOrigin = superFrame.width - otherSize - xPad
             yOrigin = yPad
             width = otherSize
             height = superFrame.height - (2 * yPad)
         }
         
-        frame = CGRectMake(xOrigin, yOrigin, width, height)
+        frame = CGRect(x: xOrigin, y: yOrigin, width: width, height: height)
 
         if height == AutoHeight && autoSize {
-            self.setHeightAutomatically()
+            self.setDimensionAutomatically()
             self.anchorAndFillEdge(edge, xPad: xPad, yPad: yPad, otherSize: self.height)
         }
     }

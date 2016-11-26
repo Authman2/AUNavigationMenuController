@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		F3E75F4E4507B405BE0C2CBD /* Pods_AUNavigationMenuController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D3F02E1820F93FCF038D2B /* Pods_AUNavigationMenuController_Tests.framework */; };
+		9689C398BC45A9412DE01A50 /* Pods_AUNavigationMenuController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999B46CEB6F00DA44F38E4D7 /* Pods_AUNavigationMenuController_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24CE056D33BFE46F751B9EE5 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUNavigationMenuController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		30D3F02E1820F93FCF038D2B /* Pods_AUNavigationMenuController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUNavigationMenuController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3686AB4FC819F91E1F9A1875 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		481D17BD5683A840DCEDD946 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0F01825AFB434DBD2FE318F7 /* AUNavigationMenuController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AUNavigationMenuController.podspec; path = ../AUNavigationMenuController.podspec; sourceTree = "<group>"; };
+		14C196596E125C3872BBF38E /* Pods-AUNavigationMenuController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUNavigationMenuController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		36A7D7A82C8AB35B8DDD2964 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUNavigationMenuController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AUNavigationMenuController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUNavigationMenuController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65745D51C84F82A9DE88EE00 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUNavigationMenuController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E0598F48E09AA9A5E9D544BA /* AUNavigationMenuController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AUNavigationMenuController.podspec; path = ../AUNavigationMenuController.podspec; sourceTree = "<group>"; };
+		63277F3E1C174C87D9CDBDFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		92670F4DC3ABBF26E32466B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		999B46CEB6F00DA44F38E4D7 /* Pods_AUNavigationMenuController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUNavigationMenuController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E75F4E4507B405BE0C2CBD /* Pods_AUNavigationMenuController_Tests.framework in Frameworks */,
+				9689C398BC45A9412DE01A50 /* Pods_AUNavigationMenuController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +41,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				62FE0C7D69429A8A133B0549 /* Pods */,
-				7ED484D5EAE55200213E5A0F /* Frameworks */,
+				8DC10CF4C06EEB10F2BE8E39 /* Pods */,
+				D8614262A3E0C838B83C80C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,26 +74,26 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				E0598F48E09AA9A5E9D544BA /* AUNavigationMenuController.podspec */,
-				481D17BD5683A840DCEDD946 /* README.md */,
-				3686AB4FC819F91E1F9A1875 /* LICENSE */,
+				0F01825AFB434DBD2FE318F7 /* AUNavigationMenuController.podspec */,
+				92670F4DC3ABBF26E32466B6 /* README.md */,
+				63277F3E1C174C87D9CDBDFE /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		62FE0C7D69429A8A133B0549 /* Pods */ = {
+		8DC10CF4C06EEB10F2BE8E39 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				24CE056D33BFE46F751B9EE5 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */,
-				65745D51C84F82A9DE88EE00 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */,
+				36A7D7A82C8AB35B8DDD2964 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */,
+				14C196596E125C3872BBF38E /* Pods-AUNavigationMenuController_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7ED484D5EAE55200213E5A0F /* Frameworks */ = {
+		D8614262A3E0C838B83C80C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				30D3F02E1820F93FCF038D2B /* Pods_AUNavigationMenuController_Tests.framework */,
+				999B46CEB6F00DA44F38E4D7 /* Pods_AUNavigationMenuController_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,12 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AUNavigationMenuController_Tests" */;
 			buildPhases = (
-				8F6D0F63B53FE0BF2D04721A /* [CP] Check Pods Manifest.lock */,
+				01B6D3B9C23E97B214629B84 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				87BFCC3AEAAC16DF76CF47FB /* [CP] Embed Pods Frameworks */,
-				601134544871DE319328091E /* [CP] Copy Pods Resources */,
+				5E61A46D8E58B67F2FA44005 /* [CP] Embed Pods Frameworks */,
+				C942A97087AB8229588A2D7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,22 +167,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		601134544871DE319328091E /* [CP] Copy Pods Resources */ = {
+		01B6D3B9C23E97B214629B84 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		87BFCC3AEAAC16DF76CF47FB /* [CP] Embed Pods Frameworks */ = {
+		5E61A46D8E58B67F2FA44005 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,19 +197,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F6D0F63B53FE0BF2D04721A /* [CP] Check Pods Manifest.lock */ = {
+		C942A97087AB8229588A2D7F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AUNavigationMenuController_Tests/Pods-AUNavigationMenuController_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -265,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -305,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -315,7 +315,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24CE056D33BFE46F751B9EE5 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 36A7D7A82C8AB35B8DDD2964 /* Pods-AUNavigationMenuController_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -336,7 +336,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65745D51C84F82A9DE88EE00 /* Pods-AUNavigationMenuController_Tests.release.xcconfig */;
+			baseConfigurationReference = 14C196596E125C3872BBF38E /* Pods-AUNavigationMenuController_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

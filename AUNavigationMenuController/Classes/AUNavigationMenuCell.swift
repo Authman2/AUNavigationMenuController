@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Neon
 
 public class AUNavigationMenuCell: UICollectionViewCell {
     
