@@ -4,4 +4,4 @@ target 'AUNavigationMenuController_Tests' do
   
   pod 'Neon'
 end
-workspace 'MyWorkspace'
+workspace 'AUNavigationMenuController'
