@@ -1,6 +1,5 @@
 # AUNavigationMenuController
 
-[![CI Status](http://img.shields.io/travis/Adeola Uthman/AUNavigationMenuController.svg?style=flat)](https://travis-ci.org/Adeola Uthman/AUNavigationMenuController)
 [![Version](https://img.shields.io/cocoapods/v/AUNavigationMenuController.svg?style=flat)](http://cocoapods.org/pods/AUNavigationMenuController)
 [![License](https://img.shields.io/cocoapods/l/AUNavigationMenuController.svg?style=flat)](http://cocoapods.org/pods/AUNavigationMenuController)
 [![Platform](https://img.shields.io/cocoapods/p/AUNavigationMenuController.svg?style=flat)](http://cocoapods.org/pods/AUNavigationMenuController)
