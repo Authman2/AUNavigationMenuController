@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '77DFCA45BE0265031D7861E3CA86170A'
-               BlueprintName = 'AUNavigationMenuController'
+               BlueprintIdentifier = 'C0DEC7CEE1B6FB79D21FF8B5CB7AACBF'
+               BlueprintName = 'Neon'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AUNavigationMenuController.framework'>
+               BuildableName = 'Neon.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
