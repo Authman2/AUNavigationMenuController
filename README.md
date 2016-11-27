@@ -4,10 +4,6 @@
 [![License](https://img.shields.io/cocoapods/l/AUNavigationMenuController.svg?style=flat)](http://cocoapods.org/pods/AUNavigationMenuController)
 [![Platform](https://img.shields.io/cocoapods/p/AUNavigationMenuController.svg?style=flat)](http://cocoapods.org/pods/AUNavigationMenuController)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 ## Installation
@@ -21,7 +17,9 @@ pod "AUNavigationMenuController"
 
 ## Author
 
-Adeola Uthman, authman2@gmail.com
+- Year: 2016
+- Language: Swift
+- Programmer: Adeola Uthman
 
 ## License
 
