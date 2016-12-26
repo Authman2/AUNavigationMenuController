@@ -46,7 +46,7 @@ public class NavigationMenuItem {
         self.image = image;
         self.destination = destination;
         self.navCont = navCont;
-        self.completion = completion!;
+        self.completion = completion;
         navCont.navigationItem.hidesBackButton = true;
     }
     
