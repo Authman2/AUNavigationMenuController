@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AUNavigationMenuController'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'Creates a menu that slides down from the top of the screen.'
 
 # This description is used to generate tags and improve search results.
