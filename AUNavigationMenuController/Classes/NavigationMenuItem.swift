@@ -29,7 +29,7 @@ public class NavigationMenuItem {
     
     
     // The completion method.
-    var completion: () -> Void?;
+    var completion: (() -> Void)?;
     
     
     
@@ -69,7 +69,9 @@ public class NavigationMenuItem {
             navCont.togglePulldownMenu();
         }
         
-        completion();
+        if let comp = completion {
+            comp();
+        }
     }
     
 }
