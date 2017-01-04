@@ -29,6 +29,9 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     public var menuItems = [NavigationMenuItem]();
     
     
+    // Color of the text. Black by default.
+    public var itemTextColor: UIColor = .black;
+    
     
     
     
@@ -227,6 +230,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! AUNavigationMenuCell;
         
         cell.navMenuItem = menuItems[indexPath.item];
+        cell.textLabel.textColor = itemTextColor;
         cell.setupLayout();
         
         return cell;
