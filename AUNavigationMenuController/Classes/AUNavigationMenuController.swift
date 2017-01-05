@@ -42,7 +42,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     // The options so that variables can be changed.
-    public var options: AUNavigationMenuOptions!;
+    public var options: AUNavigationMenuOptions?;
     
     
     
