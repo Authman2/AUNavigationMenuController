@@ -56,7 +56,6 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
-        setupOptions();
         setupCollectionView();
         setupTapGesture();
         addMenuView();
@@ -64,7 +63,6 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     public override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController);
-        setupOptions();
         setupCollectionView();
         setupTapGesture();
         addMenuView();
@@ -76,14 +74,12 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     public override func viewDidLoad() {
         super.viewDidLoad();
-        setupOptions();
         setupCollectionView();
         setupTapGesture();
         addMenuView();
     }
     
     public override func didMove(toParentViewController parent: UIViewController?) {
-        setupOptions();
         setupCollectionView();
         setupTapGesture();
         addMenuView();
@@ -113,13 +109,16 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     /* Sets up the options. */
-    private func setupOptions() {
+    private func configureOptions(options: AUNavigationMenuOptions) {
+        self.options = options;
+        
         if options != nil {
             
             itemTextColor = options.itemTextColor;
             spacing = options.itemSpacing;
             itemSize = options.itemSize;
             
+            self.collectionView.reloadData();
         }
     }
     
