@@ -281,8 +281,8 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if let size = options?.itemSize {
-            return itemSize;
+        if let _ = options?.itemSize {
+            return (options?.itemSize)!;
         } else {
             return CGSize(width: 115, height: pullAmount - 35);
         }
@@ -290,8 +290,8 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if let space = options?.itemSpacing {
-            return space;
+        if let _ = options?.itemSpacing {
+            return (options?.itemSpacing)!;
         } else {
             return 10;
         }
