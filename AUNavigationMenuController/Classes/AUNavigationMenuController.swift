@@ -136,8 +136,6 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         collectionView.alwaysBounceHorizontal = true;
         collectionView.showsHorizontalScrollIndicator = false;
         collectionView.showsVerticalScrollIndicator = false;
-        
-        guard options != nil else { itemSize = CGSize(width: 115, height: pullAmount - 35); return; }
     }
     
     
@@ -205,6 +203,17 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         
         collectionView.delegate = self;
         collectionView.dataSource = self;
+        
+        
+        if options == nil {
+            itemSize = CGSize(width: 115, height: pullAmount - 35);
+            spacing = 10;
+            itemTextColor = .black;
+        } else {
+            itemSize = (options?.itemSize)!;
+            spacing = (options?.itemSpacing)!;
+            itemTextColor = (options?.itemTextColor)!;
+        }
     }
     
     
@@ -263,12 +272,20 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return itemSize;
+        if options != nil {
+            return itemSize;
+        } else {
+            return CGSize(width: 115, height: pullAmount - 35);
+        }
     }
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing;
+        if options != nil {
+            return spacing;
+        } else {
+            return 10;
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
