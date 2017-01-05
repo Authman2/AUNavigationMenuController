@@ -28,7 +28,7 @@ public class AUNavigationMenuOptions: NSObject {
     
     
     
-    override init() {
+    public override init() {
         super.init();
     }
     

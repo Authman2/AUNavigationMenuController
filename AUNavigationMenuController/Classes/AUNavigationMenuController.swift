@@ -75,8 +75,8 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     public override func viewDidLoad() {
-        setupOptions();
         super.viewDidLoad();
+        setupOptions();
         setupCollectionView();
         setupTapGesture();
         addMenuView();
@@ -118,7 +118,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
             
             itemTextColor = options.itemTextColor;
             spacing = options.itemSpacing;
-            
+            itemSize = options.itemSize;
             
         }
     }
