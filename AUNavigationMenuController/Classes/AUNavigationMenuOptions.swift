@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-public class AUNavigationMenuOptions {
+public class AUNavigationMenuOptions: NSObject {
     
     /// Color of the text. Black by default.
     public var itemTextColor: UIColor = .black;
@@ -22,5 +22,16 @@ public class AUNavigationMenuOptions {
     
     /// The size of the menu items.
     public var itemSize: CGSize = CGSize(width: 0, height: 0);
+    
+    
+    
+    
+    
+    
+    override init() {
+        super.init();
+    }
+    
+    
     
 }
