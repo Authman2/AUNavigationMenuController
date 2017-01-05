@@ -112,14 +112,17 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     public func configureOptions(options: AUNavigationMenuOptions) {
         self.options = options;
         
-        if options != nil {
-            
-            itemTextColor = options.itemTextColor;
-            spacing = options.itemSpacing;
-            itemSize = options.itemSize;
-            
-            self.collectionView.reloadData();
+        if let color = options.itemTextColor {
+            itemTextColor = color;
         }
+        if let space = options.itemSpacing {
+            spacing = space;
+        }
+        if let size = options.itemSize {
+            itemSize = size;
+        }
+        
+        self.collectionView.reloadData();
     }
     
     
@@ -210,9 +213,15 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
             spacing = 10;
             itemTextColor = .black;
         } else {
-            itemSize = (options?.itemSize)!;
-            spacing = (options?.itemSpacing)!;
-            itemTextColor = (options?.itemTextColor)!;
+            if let color = self.options?.itemTextColor {
+                itemTextColor = color;
+            }
+            if let space = self.options?.itemSpacing {
+                spacing = space;
+            }
+            if let size = self.options?.itemSize {
+                itemSize = size;
+            }
         }
     }
     
@@ -272,7 +281,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if options != nil {
+        if let size = options?.itemSize {
             return itemSize;
         } else {
             return CGSize(width: 115, height: pullAmount - 35);
@@ -281,8 +290,8 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if options != nil {
-            return spacing;
+        if let space = options?.itemSpacing {
+            return space;
         } else {
             return 10;
         }
