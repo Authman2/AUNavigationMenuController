@@ -42,7 +42,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     // The options so that variables can be changed.
-    public var options: AUNavigationMenuOptions?;
+    private var options: AUNavigationMenuOptions?;
     
     
     
@@ -109,7 +109,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     /* Sets up the options. */
-    private func configureOptions(options: AUNavigationMenuOptions) {
+    public func configureOptions(options: AUNavigationMenuOptions) {
         self.options = options;
         
         if options != nil {
