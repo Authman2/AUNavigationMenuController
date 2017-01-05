@@ -14,7 +14,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     // Whether or not the menu is open.
-    public var open: Bool = Bool();
+    public var open: Bool! = false;
     
     
     // The amount to pull the menu down by.
@@ -22,7 +22,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     // The collection view with all of the menu pages.
-    var collectionView: UICollectionView!;
+    private var collectionView: UICollectionView!;
     
     
     // The menu pages that take the user to different view controllers.
@@ -30,7 +30,19 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     // Color of the text. Black by default.
-    public var itemTextColor: UIColor = .black;
+    private var itemTextColor: UIColor = .black;
+    
+    
+    // The spacing between items.
+    private var spacing: CGFloat = 10;
+    
+    
+    // The size of the menu items.
+    private var itemSize: CGSize!;
+    
+    
+    // The options so that variables can be changed.
+    public var options: AUNavigationMenuOptions!;
     
     
     
@@ -44,17 +56,17 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
+        setupOptions();
         setupCollectionView();
         setupTapGesture();
-        // Creates a menu view and adds it behind everything.
         addMenuView();
     }
     
     public override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController);
+        setupOptions();
         setupCollectionView();
         setupTapGesture();
-        // Creates a menu view and adds it behind everything.
         addMenuView();
     }
     
@@ -63,17 +75,17 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     public override func viewDidLoad() {
+        setupOptions();
         super.viewDidLoad();
         setupCollectionView();
         setupTapGesture();
-        // Creates a menu view and adds it behind everything.
         addMenuView();
     }
     
     public override func didMove(toParentViewController parent: UIViewController?) {
+        setupOptions();
         setupCollectionView();
         setupTapGesture();
-        // Creates a menu view and adds it behind everything.
         addMenuView();
     }
     
@@ -100,6 +112,18 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     
+    /* Sets up the options. */
+    private func setupOptions() {
+        if options != nil {
+            
+            itemTextColor = options.itemTextColor;
+            spacing = options.itemSpacing;
+            
+            
+        }
+    }
+    
+    
     /* Setup what's needed for the collection view. */
     private func setupCollectionView() {
         pullAmount = UIScreen.main.bounds.height / 4 + 10;
@@ -109,10 +133,12 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         layout.sectionInset = UIEdgeInsets(top: 25, left: 0, bottom: 0, right: 0);
         
         collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: pullAmount), collectionViewLayout: layout);
-        collectionView!.register(AUNavigationMenuCell.self, forCellWithReuseIdentifier: "Cell");
+        collectionView!.register(AUNavigationMenuCell.self, forCellWithReuseIdentifier: "AUMenuCell");
         collectionView.alwaysBounceHorizontal = true;
         collectionView.showsHorizontalScrollIndicator = false;
         collectionView.showsVerticalScrollIndicator = false;
+        
+        guard options != nil else { itemSize = CGSize(width: 115, height: pullAmount - 35); return; }
     }
     
     
@@ -227,7 +253,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! AUNavigationMenuCell;
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AUMenuCell", for: indexPath) as! AUNavigationMenuCell;
         
         cell.navMenuItem = menuItems[indexPath.item];
         cell.textLabel.textColor = itemTextColor;
@@ -238,12 +264,12 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 115, height: pullAmount - 35);
+        return itemSize;
     }
     
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10;
+        return spacing;
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
