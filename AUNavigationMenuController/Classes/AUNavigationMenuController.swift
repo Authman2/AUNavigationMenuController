@@ -314,7 +314,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         let leftInset: CGFloat?;
         
         if let itemsize = itemSize {
-            totalCellWidth = itemSize.width * CGFloat(menuItems.count);
+            totalCellWidth = itemsize.width * CGFloat(menuItems.count);
         } else {
             totalCellWidth = 115 * CGFloat(menuItems.count);
         }
