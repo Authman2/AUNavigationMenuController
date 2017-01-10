@@ -325,7 +325,11 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         leftInset = (collectionView.width - CGFloat(totalCellWidth! + totalSpacingWidth!)) / 2;
         let rightInset = leftInset;
         
-        return UIEdgeInsetsMake(0, leftInset!, 0, rightInset!);
+        if let itemsize = itemSize {
+            return UIEdgeInsetsMake(0, leftInset! + itemsize.width, 0, rightInset!);
+        } else {
+            return UIEdgeInsetsMake(0, leftInset! + 115, 0, rightInset!);
+        }
     }
     
 }
