@@ -121,6 +121,9 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         if let size = options.itemSize {
             itemSize = size;
         }
+        if let pAmount = options.pullAmount {
+            pullAmount = pAmount;
+        }
         
         self.collectionView.reloadData();
     }
@@ -139,6 +142,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         collectionView.alwaysBounceHorizontal = true;
         collectionView.showsHorizontalScrollIndicator = false;
         collectionView.showsVerticalScrollIndicator = false;
+        collectionView.translatesAutoresizingMaskIntoConstraints = false;
     }
     
     
@@ -293,12 +297,35 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         if let _ = options?.itemSpacing {
             return (options?.itemSpacing)!;
         } else {
-            return 10;
+            return self.spacing;
         }
     }
     
+   
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         menuItems[indexPath.item].goToDestination(toggle: true);
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        
+        let totalCellWidth: CGFloat?;
+        let totalSpacingWidth: CGFloat?;
+        let leftInset: CGFloat?;
+        
+        if let itemsize = itemSize {
+            totalCellWidth = itemSize.width * CGFloat(menuItems.count);
+        } else {
+            totalCellWidth = 115 * CGFloat(menuItems.count);
+        }
+        
+        
+        totalSpacingWidth = self.spacing * CGFloat(menuItems.count - 1);
+        
+        leftInset = (collectionView.width - CGFloat(totalCellWidth! + totalSpacingWidth!)) / 2;
+        let rightInset = leftInset;
+        
+        return UIEdgeInsetsMake(0, leftInset!, 0, rightInset!);
     }
     
 }
