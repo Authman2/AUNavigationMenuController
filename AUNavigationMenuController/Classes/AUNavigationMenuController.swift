@@ -307,7 +307,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     }
     
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         let totalCellWidth: CGFloat?;
         let totalSpacingWidth: CGFloat?;
