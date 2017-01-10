@@ -326,9 +326,9 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         let rightInset = leftInset;
         
         if let itemsize = itemSize {
-            return UIEdgeInsetsMake(0, leftInset! + itemsize.width, 0, rightInset!);
+            return UIEdgeInsetsMake(0, leftInset! + (itemsize.width / 2), 0, rightInset! + (itemsize.width / 2));
         } else {
-            return UIEdgeInsetsMake(0, leftInset! + 115, 0, rightInset!);
+            return UIEdgeInsetsMake(0, leftInset! + (115 / 2), 0, rightInset! + (115 / 2));
         }
     }
     
