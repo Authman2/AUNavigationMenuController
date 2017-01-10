@@ -123,6 +123,8 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
         }
         if let pAmount = options.pullAmount {
             pullAmount = pAmount;
+            collectionView = nil;
+            self.setupCollectionView();
         }
         
         self.collectionView.reloadData();
@@ -131,8 +133,6 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
     
     /* Setup what's needed for the collection view. */
     private func setupCollectionView() {
-        pullAmount = UIScreen.main.bounds.height / 4 + 10;
-        
         let layout = UICollectionViewFlowLayout();
         layout.scrollDirection = .horizontal;
         layout.sectionInset = UIEdgeInsets(top: 25, left: 0, bottom: 0, right: 0);
@@ -216,6 +216,7 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
             itemSize = CGSize(width: 115, height: pullAmount - 35);
             spacing = 10;
             itemTextColor = .black;
+            pullAmount = UIScreen.main.bounds.height / 4 + 10;
         } else {
             if let color = self.options?.itemTextColor {
                 itemTextColor = color;
@@ -225,6 +226,9 @@ public class AUNavigationMenuController: UINavigationController, UICollectionVie
             }
             if let size = self.options?.itemSize {
                 itemSize = size;
+            }
+            if let amount = self.options?.pullAmount {
+                pullAmount = amount;
             }
         }
     }
